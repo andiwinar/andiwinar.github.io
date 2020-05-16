@@ -9,10 +9,14 @@
     <meta name="generator" content="Jekyll v4.0.1">
     <title>Andiwinar | Github Page</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 
     <!-- Bootstrap core CSS -->
     <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
 
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.5/examples/cover/cover.css" rel="stylesheet">
@@ -24,14 +28,51 @@
     </style>
   </head>
   <body class="text-center">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column justify-content-center">
-      <main role="main" class="inner cover">
-        <h1 class="cover-heading">Andiwinar</h1>
-        <p class="lead">
-          “You are never too old to set another goal or dream a new dream.”
-        </p>
-        <hr>
-      </main>
+    <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column justify-content-center">
+      <div class="row">
+        <div class="col-md-6">
+          <main role="main" class="inner cover">
+            <h1 class="cover-heading">Andiwinar</h1>
+            <p class="lead" style="font-size: 16px;">
+              “You are never too old to set another goal or dream a new dream.”
+            </p>
+            <hr>
+          </main>
+        </div>
+        <div class="col-md-6">
+          <main role="main" class="inner cover">
+            <h1 class="cover-heading"><i class="fab fa-github"></i> Github Repository</h1>
+            <div class="treeview w-20 border" style="width: 100%;">
+              <ul class="text-left mb-0 p-2">
+                <li><i class="fas fa-angle-right rotate"></i>
+                  <span><i class="fab fa-github ic-w mx-1"></i>andiwinar.github.io</span>
+                  <ul class="nested">
+                      <li><i class="fab fa-github ic-w mr-1"></i><a href="https://andiwinar.github.io/elacak" target="_blank">E-Lacak</a></li>
+                      <li><i class="fab fa-github ic-w mr-1"></i><a href="https://andiwinar.github.io/logistik" target="_blank">Logistik</a></li>
+                      <li><i class="fab fa-github ic-w mr-1"></i><a href="https://andiwinar.github.io/mainbola" target="_blank">Sehat Main Bola</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+          </main>
+        </div>
+      </div>
     </div>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <script>
+    // Treeview Initialization
+    $(document).ready(function() {
+      $('.treeview').mdbTreeview();
+    });
+  </script>
 </body>
 </html>
